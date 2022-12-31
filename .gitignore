@@ -2,9 +2,9 @@ __pycache__
 media/images
 media/Tex
 media/texts
-videos/anim
-videos/eq
-videos/test
+media/videos/anim
+media/videos/eq
+media/videos/test
 anim.py
 eq.py
 test.py
