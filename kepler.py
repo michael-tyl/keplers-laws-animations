@@ -309,4 +309,35 @@ class Final(Scene):
         self.play(*[Write(klaw1),Write(klaw2),Write(klaw3)],run_time=5)
         self.wait(20)
 
+class EndScreen(Scene):
+    def construct(self):
+        sun = Circle()
+        sun.set_fill(YELLOW,opacity=0.8)
+        sun.scale(0.2)
+
+        p_ellipse = Ellipse(width=8.0, height=6.0, color=BLUE)
+        p_ellipse.shift(RIGHT)
+        gr = Group(p_ellipse,sun)
+        gr.shift(DOWN*1.5)
+        gr.shift(LEFT)
+        gr.scale(0.5)
+        planet = Dot().set_color(GREEN)
+        
+        self.play(Create(sun))
+        self.play(Create(p_ellipse))
+        planet.move_to(p_ellipse.get_right())
+        self.play(Create(planet))
+
+        ty = Text("Thank you for watching!")
+        ty.shift(UP)
+        self.play(Write(ty))
+
+        self.wait()
+        for i in range(3):
+            self.play(MoveAlongPath(planet,p_ellipse),rate_func=rate_functions.smooth,run_time=5)
+
+        self.play(
+            *[FadeOut(mob)for mob in self.mobjects], run_time=3
+        )
+        self.wait()
     
