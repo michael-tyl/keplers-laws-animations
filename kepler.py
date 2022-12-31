@@ -24,6 +24,7 @@ class Title(Scene):
         
         self.play(Create(sun))
         self.play(Create(p_ellipse))
+        planet.move_to(p_ellipse.get_right())
         self.play(Create(planet))
 
         self.wait()
@@ -270,3 +271,42 @@ class Three(Scene):
         self.play(Write(vars))
 
         self.wait(20)
+
+class Final(Scene):
+    def construct(self):
+        title = Text("Kepler's Laws of Planetary Motion")
+        title.shift(UP*2)
+        self.play(Write(title))
+        self.wait()
+
+        klaw1 = Text("1. A planet revolves around the sun in an elliptical orbit with the sun at one focus.",
+                            t2c={"elliptical orbit":RED,"sun at one focus":YELLOW},
+                            line_spacing=1,
+                            font_size=24)
+        
+        klaw1.shift(UP*0.5)
+
+        klaw2 = Text("2. The line joining the sun to a planet sweeps out equal areas in equal times.",
+                            t2c={"equal areas":RED,"equal times":YELLOW},
+                            t2w={"sweeps out":BOLD},
+                            line_spacing=1,
+                            font_size=24)
+        
+        klaw2.next_to(klaw1,DOWN,buff=2)
+
+        klaw3 = Text("3. The square of the period of revolution of a planet is proportional to\nthe cube of the length of the major axis of its orbit.",
+                            t2c={"square":RED,"period":YELLOW,"cube":RED,"major axis":YELLOW},
+                            t2w={"proportional":BOLD},
+                            line_spacing=1,
+                            font_size=24)
+        
+        klaw3.next_to(klaw2,DOWN,buff=2)
+
+        gr = VGroup(klaw1,klaw2,klaw3)
+        gr.arrange(DOWN*2.5,center=False,aligned_edge=LEFT)
+        # gr.shift(LEFT*0.5)
+
+        self.play(*[Write(klaw1),Write(klaw2),Write(klaw3)],run_time=5)
+        self.wait(20)
+
+    

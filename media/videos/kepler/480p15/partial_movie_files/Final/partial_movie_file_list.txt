@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/480p15/partial_movie_files/Final/4266129954_3965617511_223132457.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/480p15/partial_movie_files/Final/1442284246_329969645_1840404013.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/480p15/partial_movie_files/Final/1442284246_1697251470_1279012188.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/480p15/partial_movie_files/Final/1442284246_3023951634_2899393108.mp4'
