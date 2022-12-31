@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/anim/480p15/partial_movie_files/ExampleFunctionGraph/4266129954_803047074_4278197401.mp4'

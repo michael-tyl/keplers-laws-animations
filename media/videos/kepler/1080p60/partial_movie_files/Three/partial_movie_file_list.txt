@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/2902699114_4231746451_631829896.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/2902699114_4174905739_4174018169.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_2601162317_241367025.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_3361030789_2951762001.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_2220518976_3932570833.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_915039453_2596608871.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_2939698431_3683136973.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_329969645_196268008.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_659412211_2293255686.mp4'
+file 'file:C:/Users/cryst/Documents/High-School/11th Grade/IB Math HL/10-6/media/videos/kepler/1080p60/partial_movie_files/Three/3931933789_3487857154_3360732037.mp4'
