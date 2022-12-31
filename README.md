@@ -1,1 +1,2 @@
-# keplers-laws-animations
+# Keplers Laws Animations
+Created using Manim Community
