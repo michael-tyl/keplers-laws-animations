@@ -1,1 +1,10 @@
 __pycache__
+media/images
+media/Tex
+media/texts
+videos/anim
+videos/eq
+videos/test
+anim.py
+eq.py
+test.py

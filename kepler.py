@@ -2,6 +2,40 @@ from manim import *
 
 factor = 1.0
 
+class Title(Scene):
+    def construct(self):
+        self.wait()
+        title = Text("Kepler's Laws of Planetary Motion")
+        title.shift(UP*1.5)
+        self.play(Write(title))
+        self.wait()
+
+        sun = Circle()
+        sun.set_fill(YELLOW,opacity=0.8)
+        sun.scale(0.2)
+
+        p_ellipse = Ellipse(width=8.0, height=6.0, color=BLUE)
+        p_ellipse.shift(RIGHT)
+        gr = Group(p_ellipse,sun)
+        gr.shift(DOWN*1.5)
+        gr.shift(LEFT)
+        gr.scale(0.5)
+        planet = Dot().set_color(GREEN)
+        
+        self.play(Create(sun))
+        self.play(Create(p_ellipse))
+        self.play(Create(planet))
+
+        self.wait()
+        for i in range(6):
+            self.play(MoveAlongPath(planet,p_ellipse),rate_func=rate_functions.smooth,run_time=5)
+
+        self.play(
+            *[FadeOut(mob)for mob in self.mobjects]
+        )
+        self.wait(20)
+
+
 class One(Scene):
     def construct(self):
         self.wait(5*factor)
@@ -47,8 +81,6 @@ class One(Scene):
                         font_size=36)
         klaw1.next_to(sun,DOWN,2.0)
         self.play(Write(klaw1))
-
-        self.wait(20)
 
 class Diagram1(Scene):
     def construct(self):
@@ -108,8 +140,8 @@ class Two(Scene):
         self.play(p_ellipse.animate.set_color(BLUE_E))
         self.wait(5*factor)
 
-        for i in range(11):
-            self.play(MoveAlongPath(planet,dyn_ell),rate_func=rate_functions.ease_in_out_quart,run_time=2)
+        for i in range(5):
+            self.play(MoveAlongPath(planet,dyn_ell),rate_func=rate_functions.ease_in_out_expo,run_time=5)
 
         gr = Group(sun,p_ellipse,planet)
         self.play(*[gr.animate.shift(LEFT*0.75),planet.animate.shift(LEFT*0.75)])
